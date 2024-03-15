@@ -29,11 +29,21 @@
    ```bash
    git clone https://github.com/Slamtec/sllidar_ros2.git
    git clone https://github.com/orbbec/OrbbecSDK_ROS2.git
-   git clone https://github.com/leocheung0804/my_bot.git
+   git clone https://github.com/leocheung84/my_bot.git
 
    ``` 
 
 2. Build packages
+
+   Install deb dependencies
+
+   ```bash
+   # assume you have sourced ROS environment, same blow
+   sudo apt install libgflags-dev nlohmann-json3-dev libgoogle-glog-dev \
+   ros-humble-xacro ros-humble-joint-state-publisher-gui \
+   ros-humble-rplidar-ros \
+   ros-humble-image-transport ros-humble-image-publisher ros-humble-camera-info-manager
+   ```
 
    From the root of your workspace (ros2_ws), you can now build package using the command:
 
