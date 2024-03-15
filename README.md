@@ -62,6 +62,7 @@
 ### Run node and view in the rviz
 
 ```bash
+. ./install/setup.bash 
 ros2 launch my_bot rplidar.launch.py 
 ```
 
