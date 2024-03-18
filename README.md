@@ -75,3 +75,9 @@ ros2 launch orbbec_camera gemini2.launch.py
 . ./install/setup.bash 
 ros2 launch my_bot rsp.launch.py
 ```
+
+#run joint sim
+```bash
+. ./install/setup.bash 
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
+```
